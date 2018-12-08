@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  appTitle = 'theWeather Copyright 2018';
+
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">{{ this.currentWeather.name }}</h3>
+    <p class="card-text">{{ this.currentWeather.weather[0].description }}</p>
+    <h3 class="card-text" id="temp">{{ this.currentWeather.main.temp }}</h3>
+    <br>
+    <p class="card-text">
+      High Today {{ this.currentWeather.main.temp_max }}<br />
+      Low Today {{ this.currentWeather.main.temp_min }}
+    </p>
+    <a href="#" class="btn btn-primary">Change Location</a>
+  </div>
+</div>

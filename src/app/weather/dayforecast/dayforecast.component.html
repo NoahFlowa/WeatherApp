@@ -1,3 +1,13 @@
-<p>
-  dayforecast works!
-</p>
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">{{ this.currentWeather.list[1].dt_txt }}</h3>
+    <p class="card-text">{{ this.currentWeather.list[1].weather[0].description }}</p>
+    <h3 class="card-text" id="temp">{{ this.currentWeather.list[1].main.temp }}</h3>
+    <br />
+    <p class="card-text">
+      High {{ this.currentWeather.list[1].main.temp_max }}<br />
+      Low {{ this.currentWeather.list[1].main.temp_min }}
+    </p>
+    <a href="#" class="btn btn-primary">Change Location</a>
+  </div>
+</div>
