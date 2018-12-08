@@ -14,6 +14,10 @@ import { DayforecastComponent } from './weather/dayforecast/dayforecast.componen
 // Other Imports
 import { HttpClientModule } from '@angular/common/http';
 import { CurrentforecastComponent } from './weather/currentforecast/currentforecast.component';
+import { Day2Component } from './weather/day2/day2.component';
+import { Day3Component } from './weather/day3/day3.component';
+import { Day4Component } from './weather/day4/day4.component';
+import { Day5Component } from './weather/day5/day5.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { CurrentforecastComponent } from './weather/currentforecast/currentforec
     HomeComponent,
     ForecastComponent,
     DayforecastComponent,
-    CurrentforecastComponent
+    CurrentforecastComponent,
+    Day2Component,
+    Day3Component,
+    Day4Component,
+    Day5Component
   ],
   imports: [
     BrowserModule,
