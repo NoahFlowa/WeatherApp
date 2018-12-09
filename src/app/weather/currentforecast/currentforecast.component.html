@@ -1,13 +1,21 @@
-<div class="card">
-  <div class="card-body">
-    <h3 class="card-title">{{ this.currentWeather.name }}</h3>
-    <p class="card-text">{{ this.currentWeather.weather[0].description }}</p>
-    <h3 class="card-text" id="temp">{{ this.currentWeather.main.temp }}</h3>
-    <br>
-    <p class="card-text">
+<div class="card text-white bg-dark">
+  <div class="card-header text-white">Current Weather</div>
+  <div class="card-body bg-primary text-white">
+    <h3 class="card-title text-white">{{ this.currentWeather.name }}</h3>
+    <p class="card-text text-white">
+      {{ this.currentWeather.weather[0].description }}
+    </p>
+    <h3 class="card-text text-white" id="temp">
+      {{ this.currentWeather.main.temp
+      }}<sup><i class="fas fa-asterisk fa-xs"></i></sup>
+    </h3>
+    <br />
+    <p class="card-text text-white">
       High Today {{ this.currentWeather.main.temp_max }}<br />
       Low Today {{ this.currentWeather.main.temp_min }}
     </p>
-    <a href="#" class="btn btn-primary">Change Location</a>
+  </div>
+  <div class="card-footer bg-dark border-light">
+    <small class="text-white">Last updated 3 mins ago</small>
   </div>
 </div>

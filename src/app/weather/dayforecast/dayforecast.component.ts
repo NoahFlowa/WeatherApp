@@ -14,7 +14,6 @@ export class DayforecastComponent implements OnInit {
   ngOnInit() {
     this.data.get4DayWeather().subscribe(data => {
       this.currentWeather = data;
-      const date = data.list[1].dt_text;
       console.log(this.currentWeather);
     });
   }
